@@ -14,29 +14,20 @@
                 lời chúc và theo dõi khách đã mở thiệp. Để trống = chế độ xem thử (chỉ lưu trên máy khách).
      Đổi ảnh  : thay file trong img/ (giữ nguyên tên), hoặc mở thiệp với #chinh-sua ở cuối link. */
   var CONFIG = {
-    start: '2026-10-17T10:00:00+07:00',
-    end: '2026-10-17T13:00:00+07:00',
-    title: 'Lễ Vu Quy Phan Vũ & Quỳnh Như',
-    place: 'Sân bóng thôn An Bình, Xã Trường Giang (Tịnh Đông cũ), Quảng Ngãi',
-    mapUrl: 'https://www.google.com/maps/dir/?api=1&destination=15.1729883,108.658986',
-    mapEmbed: 'https://www.google.com/maps?q=15.1729883,108.658986&output=embed',
+    start: '2026-11-07T18:00:00+07:00',
+    end: '2026-11-07T21:00:00+07:00',
+    title: 'Tiệc Báo Hỷ Phan Vũ & Quỳnh Như',
+    place: 'Nhà Hàng Tiệc Cưới Grand Palace Mạc Đỉnh Chi',
+    mapUrl: 'https://maps.app.goo.gl/eQiU2ZQzBkg6CTAK8',
+    mapEmbed: 'https://www.google.com/maps?q=Nh%C3%A0+H%C3%A0ng+Ti%E1%BB%87c+C%C6%B0%E1%BB%9Bi+Grand+Palace+M%E1%BA%A1c+%C4%90%E1%BB%89nh+Chi&output=embed',
     events: {
-      gai: {
-        name: 'Lễ Vu Quy', time: '10:00', weekday: 'Thứ Bảy', date: '17.10.2026',
-        start: '2026-10-17T10:00:00+07:00', end: '2026-10-17T13:00:00+07:00',
-        lunar: 'Tức ngày 08 tháng 09 năm Bính Ngọ',
-        place: 'Sân bóng thôn An Bình, Xã Trường Giang (Tịnh Đông cũ), Quảng Ngãi',
-        venue: 'Sân bóng thôn An Bình',
-        mapUrl: 'https://www.google.com/maps/dir/?api=1&destination=15.1729883,108.658986',
-        mapEmbed: 'https://www.google.com/maps?q=15.1729883,108.658986&output=embed'
-      },
-      trai: {
-        name: 'Lễ Tân Hôn', time: '11:00', weekday: 'Thứ Năm', date: '29.10.2026',
-        start: '2026-10-29T11:00:00+07:00', end: '2026-10-29T14:00:00+07:00',
-        lunar: 'Tức ngày 20 tháng 09 năm Bính Ngọ',
-        place: 'Phước Lâm Viên, Đak Đoa, Gia Lai', venue: 'Phước Lâm Viên',
-        mapUrl: 'https://www.google.com/maps/dir/?api=1&destination=13.9874621,108.1129081',
-        mapEmbed: 'https://www.google.com/maps?q=13.9874621,108.1129081&output=embed'
+      sg: {
+        name: 'Tiệc Báo Hỷ', time: '18:00', weekday: 'Thứ Bảy', date: '07.11.2026',
+        start: '2026-11-07T18:00:00+07:00', end: '2026-11-07T21:00:00+07:00',
+        lunar: 'Tức ngày 29 tháng 09 năm Bính Ngọ',
+        place: 'Nhà Hàng Tiệc Cưới Grand Palace Mạc Đỉnh Chi', venue: 'Grand Palace Mạc Đỉnh Chi',
+        mapUrl: 'https://maps.app.goo.gl/eQiU2ZQzBkg6CTAK8',
+        mapEmbed: 'https://www.google.com/maps?q=Nh%C3%A0+H%C3%A0ng+Ti%E1%BB%87c+C%C6%B0%E1%BB%9Bi+Grand+Palace+M%E1%BA%A1c+%C4%90%E1%BB%89nh+Chi&output=embed'
       }
     },
     musicUrl: 'music/nhac-nen.mp3',
@@ -80,7 +71,7 @@
 
   /* ---- khách mời từ link: ?to=Anh%20Minh&id=k7f3qa&ben=trai (link tạo từ Google Sheet) ---- */
   var GUEST = { name: '', id: '', side: '' };
-  var EVENT = CONFIG.events.gai;
+  var EVENT = CONFIG.events.sg;
   function useEvent(event) {
     EVENT = event;
     CONFIG.start = event.start; CONFIG.end = event.end;
@@ -138,7 +129,7 @@
       if (thanksSignName) thanksSignName.textContent = 'Sang & Nga';
     }
   } catch (e) {}
-  useEvent(GUEST.side === 'Nhà trai' ? CONFIG.events.trai : CONFIG.events.gai);
+  useEvent(CONFIG.events.sg);
   if (GUEST.name) applyGuestInfo(GUEST);
 
   /* ---- Google Sheet (Apps Script) ---- */
