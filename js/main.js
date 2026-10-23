@@ -17,17 +17,17 @@
     start: '2026-11-07T18:00:00+07:00',
     end: '2026-11-07T21:00:00+07:00',
     title: 'Tiệc Báo Hỷ Phan Vũ & Quỳnh Như',
-    place: 'Nhà Hàng Tiệc Cưới Grand Palace Mạc Đỉnh Chi',
+    place: 'Nhà Hàng Tiệc Cưới Grand Palace Mạc Đỉnh Chi, Tân Định, TP. Hồ Chí Minh',
     mapUrl: 'https://maps.app.goo.gl/eQiU2ZQzBkg6CTAK8',
-    mapEmbed: 'https://www.google.com/maps?q=Nh%C3%A0+H%C3%A0ng+Ti%E1%BB%87c+C%C6%B0%E1%BB%9Bi+Grand+Palace+M%E1%BA%A1c+%C4%90%E1%BB%89nh+Chi&output=embed',
+    mapEmbed: 'https://www.google.com/maps?q=Nh%C3%A0+H%C3%A0ng+Ti%E1%BB%87c+C%C6%B0%E1%BB%9Bi+Grand+Palace+M%E1%BA%A1c+%C4%90%E1%BB%89nh+Chi%2C+T%C3%A2n+%C4%90%E1%BB%8Bnh%2C+TP.+H%E1%BB%93+Ch%C3%AD+Minh&output=embed',
     events: {
       sg: {
         name: 'Tiệc Báo Hỷ', time: '18:00', weekday: 'Thứ Bảy', date: '07.11.2026',
         start: '2026-11-07T18:00:00+07:00', end: '2026-11-07T21:00:00+07:00',
         lunar: 'Tức ngày 29 tháng 09 năm Bính Ngọ',
-        place: 'Nhà Hàng Tiệc Cưới Grand Palace Mạc Đỉnh Chi', venue: 'Grand Palace Mạc Đỉnh Chi',
+        place: 'Nhà Hàng Tiệc Cưới Grand Palace Mạc Đỉnh Chi, Tân Định, TP. Hồ Chí Minh', venue: 'Grand Palace Mạc Đỉnh Chi',
         mapUrl: 'https://maps.app.goo.gl/eQiU2ZQzBkg6CTAK8',
-        mapEmbed: 'https://www.google.com/maps?q=Nh%C3%A0+H%C3%A0ng+Ti%E1%BB%87c+C%C6%B0%E1%BB%9Bi+Grand+Palace+M%E1%BA%A1c+%C4%90%E1%BB%89nh+Chi&output=embed'
+        mapEmbed: 'https://www.google.com/maps?q=Nh%C3%A0+H%C3%A0ng+Ti%E1%BB%87c+C%C6%B0%E1%BB%9Bi+Grand+Palace+M%E1%BA%A1c+%C4%90%E1%BB%89nh+Chi%2C+T%C3%A2n+%C4%90%E1%BB%8Bnh%2C+TP.+H%E1%BB%93+Ch%C3%AD+Minh&output=embed'
       }
     },
     musicUrl: 'music/nhac-nen.mp3',
